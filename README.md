@@ -13,13 +13,7 @@ class DaftarNilaiMahasiswa:
         self.daftar_mahasiswa = []
 
     def tambah(self, nama, tugas, uts, uas):
-        self.daftar_mahasiswa.append({
-            'nama': nama,
-            'tugas': tugas,
-            'uts': uts,
-            'uas': uas,
-            'nilai_akhir': tugas * 0.3 + uts * 0.35 + uas * 0.35
-        })
+        self.daftar_mahasiswa.append({  'nama': nama, 'tugas': tugas,  'uts': uts, 'uas': uas,  'nilai_akhir': tugas * 0.3 + uts * 0.35 + uas * 0.35 })
         print(f"Data {nama} berhasil ditambahkan.")
 
     def tampilkan(self):
@@ -53,7 +47,7 @@ def main():
     daftar = DaftarNilaiMahasiswa()
 
     while True:
-        print("\nMenu:\n1. Tambah Data\n2. Tampilkan Data\n3. Hapus Data\n4. Ubah Data\n5. Keluar")
+        print("\nMenu:\n1. Tambah Data mahasiswa\n2. Tampilkan Data mahasiswa\n3. Hapus Data mahasiswa\n4. Ubah Data mahasiswa\n5. Keluar")
         pilihan = input("Pilih (1-5): ")
 
         if pilihan == '1':
@@ -65,7 +59,7 @@ def main():
         elif pilihan == '4':
             daftar.ubah(input("Nama yang akan diubah: "))
         elif pilihan == '5':
-            print("Terima kasih!")
+            print("selesai!")
             break
         else:
             print("Pilihan tidak valid.")
