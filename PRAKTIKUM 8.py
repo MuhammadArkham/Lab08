@@ -1,0 +1,63 @@
+class DaftarNilaiMahasiswa:
+    def __init__(self):
+        self.daftar_mahasiswa = []
+
+    def tambah(self, nama, tugas, uts, uas):
+        self.daftar_mahasiswa.append({
+            'nama': nama,
+            'tugas': tugas,
+            'uts': uts,
+            'uas': uas,
+            'nilai akhir': tugas * 0.3 + uts * 0.35 + uas * 0.35
+        })
+        print(f"Data {nama} berhasil ditambahkan.")
+
+    def tampilkan(self):
+        if not self.daftar_mahasiswa:
+            print("Tidak ada data mahasiswa.")
+        else:
+            for data in self.daftar_mahasiswa:
+                print(f"Nama: {data['nama']}, Tugas: {data['tugas']}, UTS: {data['uts']}, UAS: {data['uas']}, nilai akhir: {data['akhir']:.2f}")
+
+    def hapus(self, nama):
+        for data in self.daftar_mahasiswa:
+            if data['nama'] == nama:
+                self.daftar_mahasiswa.remove(data)
+                print(f"Data {nama} berhasil dihapus.")
+                return
+        print(f"Data {nama} tidak ditemukan.")
+
+    def ubah(self, nama):
+        for data in self.daftar_mahasiswa:
+            if data['nama'] == nama:
+                data['tugas'] = float(input("Masukkan nilai tugas baru: "))
+                data['uts'] = float(input("Masukkan nilai UTS baru: "))
+                data['uas'] = float(input("Masukkan nilai UAS baru: "))
+                data['akhir'] = data['tugas'] * 0.3 + data['uts'] * 0.35 + data['uas'] * 0.35
+                print("Data berhasil diubah.")
+                return
+        print(f"Data {nama} tidak ditemukan.")
+
+def main():
+    daftar = DaftarNilaiMahasiswa()
+
+    while True:
+        print("\nMenu:\n1. Tambah Data mahasiswa\n2. Tampilkan Data mahasiswa\n3. Hapus Data mahasiswa\n4. Ubah Data mahasiswa\n5. Keluar")
+        pilihan = input("Pilih (1-5): ")
+
+        if pilihan == '1':
+            daftar.tambah(input("Nama: "), float(input("Tugas: ")), float(input("UTS: ")), float(input("UAS: ")))
+        elif pilihan == '2':
+            daftar.tampilkan()
+        elif pilihan == '3':
+            daftar.hapus(input("Nama yang akan dihapus: "))
+        elif pilihan == '4':
+            daftar.ubah(input("Nama yang akan diubah: "))
+        elif pilihan == '5':
+            print("Terima kasih!")
+            break
+        else:
+            print("Pilihan tidak valid.")
+
+if __name__ == "__main__":
+    main()
