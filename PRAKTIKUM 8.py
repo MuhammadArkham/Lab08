@@ -8,7 +8,7 @@ class DaftarNilaiMahasiswa:
             'tugas': tugas,
             'uts': uts,
             'uas': uas,
-            'nilai akhir': tugas * 0.3 + uts * 0.35 + uas * 0.35
+            'nilai_akhir': tugas * 0.3 + uts * 0.35 + uas * 0.35
         })
         print(f"Data {nama} berhasil ditambahkan.")
 
@@ -17,7 +17,8 @@ class DaftarNilaiMahasiswa:
             print("Tidak ada data mahasiswa.")
         else:
             for data in self.daftar_mahasiswa:
-                print(f"Nama: {data['nama']}, Tugas: {data['tugas']}, UTS: {data['uts']}, UAS: {data['uas']}, nilai akhir: {data['akhir']:.2f}")
+                print(f"Nama: {data['nama']}, Tugas: {data['tugas']}, UTS: {data['uts']}, "
+                      f"UAS: {data['uas']}, Nilai Akhir: {data['nilai_akhir']:.2f}")
 
     def hapus(self, nama):
         for data in self.daftar_mahasiswa:
@@ -33,7 +34,7 @@ class DaftarNilaiMahasiswa:
                 data['tugas'] = float(input("Masukkan nilai tugas baru: "))
                 data['uts'] = float(input("Masukkan nilai UTS baru: "))
                 data['uas'] = float(input("Masukkan nilai UAS baru: "))
-                data['akhir'] = data['tugas'] * 0.3 + data['uts'] * 0.35 + data['uas'] * 0.35
+                data['nilai_akhir'] = data['tugas'] * 0.3 + data['uts'] * 0.35 + data['uas'] * 0.35
                 print("Data berhasil diubah.")
                 return
         print(f"Data {nama} tidak ditemukan.")
@@ -42,7 +43,7 @@ def main():
     daftar = DaftarNilaiMahasiswa()
 
     while True:
-        print("\nMenu:\n1. Tambah Data mahasiswa\n2. Tampilkan Data mahasiswa\n3. Hapus Data mahasiswa\n4. Ubah Data mahasiswa\n5. Keluar")
+        print("\nMenu:\n1. Tambah Data\n2. Tampilkan Data\n3. Hapus Data\n4. Ubah Data\n5. Keluar")
         pilihan = input("Pilih (1-5): ")
 
         if pilihan == '1':
