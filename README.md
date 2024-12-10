@@ -71,7 +71,7 @@ if __name__ == "__main__":
 ![Foto](https://github.com/MuhammadArkham/Lab08/blob/main/Screenshot%202024-12-10%20170943.png?raw=true)
 ![Foto](https://github.com/MuhammadArkham/Lab08/blob/main/Screenshot%202024-12-10%20171004.png?raw=true)
 
-## Penjelasan dan Kode Python Program Pengelola Nilai Mahasiswa
+## Penjelasan Program Pengelola Nilai Mahasiswa
 
 ### 1. Class `DaftarNilaiMahasiswa`
   
