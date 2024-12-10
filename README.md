@@ -202,4 +202,4 @@ def main():
 ![Foto](https://github.com/MuhammadArkham/Lab08/blob/main/Flowchart.png?raw=true)
 
 # Diagram class program
-![Foto](https://github.com/MuhammadArkham/Lab08/blob/main/diagram%20class.png?raw=true)
+![Foto](https://github.com/MuhammadArkham/Lab08/blob/main/Diagram%20class%20(1).png?raw=true)
