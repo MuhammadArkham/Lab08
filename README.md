@@ -73,3 +73,6 @@ if __name__ == "__main__":
 
 # Flowchart dari program 
 ![Foto](https://github.com/MuhammadArkham/Lab08/blob/main/Flowchart.png?raw=true)
+
+# Diagram class program
+![Foto](https://github.com/MuhammadArkham/Lab08/blob/main/diagram%20class.png?raw=true)
