@@ -70,3 +70,6 @@ if __name__ == "__main__":
 # Eksekusi program(output)
 ![Foto](https://github.com/MuhammadArkham/Lab08/blob/main/Screenshot%202024-12-10%20170943.png?raw=true)
 ![Foto](https://github.com/MuhammadArkham/Lab08/blob/main/Screenshot%202024-12-10%20171004.png?raw=true)
+
+# Flowchart dari program 
+![Foto](https://github.com/MuhammadArkham/Lab08/blob/main/Flowchart.png?raw=true)
